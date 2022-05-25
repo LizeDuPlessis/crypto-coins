@@ -8,10 +8,6 @@ export default function FeedbackList({ handleDelete, feedback }) {
 
   return (
     <>
-      <form>
-        <input type="text" placeholder="Write review here" />
-        <button className="">Submit</button>
-      </form>
       <div>
         {feedback.map((item) => (
           <FeedbackItem key={item.id} item={item} handleDelete={handleDelete} />

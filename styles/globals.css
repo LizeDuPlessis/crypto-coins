@@ -7,7 +7,7 @@
 body {
   font-family: "Nunito";
   line-height: 1.5;
-  background-color: #f6f5f2;
+  background-color: #f8fafc;
 }
 
 footer {
@@ -20,16 +20,21 @@ footer {
 }
 nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   margin: 10px 35px;
   padding: 10px 0px;
   border-bottom: 1px solid #ddd;
 }
-
-.logo {
-  margin-right: auto;
+header {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
+
 nav a {
   margin-left: 10px;
   padding: 6px 12px;
@@ -51,6 +56,48 @@ a:hover {
   padding: 3px;
   margin: -60px 0px;
 }
+
+.btn {
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background-color: #202142;
+}
+
+.btn-secondary {
+  background: #ff6a95;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  color: #333;
+  cursor: auto;
+}
+
+.btn:disabled:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.message {
+  padding-top: 10px;
+  text-align: center;
+  color: rebeccapurple;
+}
+
 @media only screen and (max-width: 442px) {
   .logo {
     display: none;

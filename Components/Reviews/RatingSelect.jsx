@@ -10,7 +10,7 @@ function RatingSelect({ select }) {
   };
   return (
     <div>
-      <ul>
+      <ul className="rating">
         <li>
           <input
             type="radio"

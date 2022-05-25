@@ -41,7 +41,6 @@ function FeedbackForm({ handleAdd }) {
         <h2>How would you rate the crypto currencies?</h2>
         <RatingSelect select={(rating) => setRating(rating)} />
         <input
-          className="text-center bg-red-20 py-10 w-full"
           type="text"
           placeholder="Write review here"
           onChange={handleTextChange}

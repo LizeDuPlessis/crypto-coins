@@ -133,3 +133,6 @@
   color: white;
   text-align: center;
 }
+.container {
+  padding: 5px 15px;
+}

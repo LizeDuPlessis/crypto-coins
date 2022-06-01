@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Open+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: "Nunito";
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   background-color: #f8fafc;
+  text-align: center;
 }
 
 footer {
@@ -33,6 +39,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  background: orange;
 }
 
 nav a {
@@ -40,6 +47,7 @@ nav a {
   padding: 6px 12px;
   margin: 0 3px;
   border-radius: 20px;
+  background: white;
 }
 a {
   text-decoration: none;
@@ -47,7 +55,7 @@ a {
   border: 1px solid #ffd700;
 }
 a:hover {
-  background: linear-gradient(rgb(249, 115, 22), rgb(253, 224, 71));
+  background: orange;
 }
 .close {
   cursor: pointer;
@@ -61,15 +69,25 @@ a:hover {
   color: #fff;
   border: 0;
   border-radius: 8px;
-  color: #fff;
-  width: 100px;
+  width: 90px;
   height: 40px;
   cursor: pointer;
   margin-top: 8px;
 }
 
+.coin-btn {
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 20px;
+  background-color: orange;
+}
 .btn-primary {
-  background-color: #202142;
+  background-color: orange;
 }
 
 .btn-secondary {
@@ -93,15 +111,15 @@ a:hover {
 }
 
 .message {
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: center;
-  color: rebeccapurple;
+  color: orange;
 }
 .rating {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 30px 0 40px;
 }
 .rating li,
@@ -114,10 +132,11 @@ a:hover {
   padding: 10px;
   text-align: center;
   border-radius: 50%;
-  font-size: 19px;
+  font-size: 15px;
   border: 1px #eee solid;
-  transition: 0.3s;
+  transition: 0.4s;
 }
+
 .rating li label {
   position: absolute;
   top: 50%;
@@ -131,9 +150,13 @@ a:hover {
 }
 .rating li:hover,
 .num {
-  background: #ff6a95;
+  background: orange;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
+}
+.num {
+  margin-bottom: 10px;
+  padding: 2px;
 }
 
 [type="radio"] {
@@ -141,15 +164,26 @@ a:hover {
 }
 
 [type="radio"]:checked ~ label {
-  background: #ff6a95;
+  background: orange;
   color: #fff;
 }
+
+textarea,
 input {
-  flex-grow: 2;
   border: none;
-  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+textarea:focus {
+  outline: none;
 }
 
-input:focus {
-  outline: none;
+.input-group {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 8px;
+  width: 100%;
+  height: 70px;
 }

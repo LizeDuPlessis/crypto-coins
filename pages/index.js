@@ -4,14 +4,14 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Crypto Coins</title>
         <meta name="keywords" content="coins" />
         <link rel="icon" href="/unicoin.png" />
       </Head>
       <main>
-        <h1 className={styles.title}>crypto coins</h1>
+        <h1 className={styles.title}>Home Page</h1>
         <p className={styles.text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni
           dolorum illum dolores voluptas nam veritatis modi iure nihil deleniti

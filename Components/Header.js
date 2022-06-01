@@ -12,6 +12,6 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  text: "CryptoCurrency",
+  text: "Crypto Currency",
 };
 export default Header;

@@ -62,7 +62,7 @@ const Details = ({ coins }) => {
       </div>
       <div className="text-center mt-5">
         <Link href={coins?.links.homepage[0]}>
-          <a className="px-3 py-1 rounded-lg border-solid border-1 border-stone-300 hover:bg-gradient-to-b from-orange-500 to-yellow-300 ">
+          <a className="px-3 py-1 rounded-lg border-solid border-1 border-stone-300 hover:bg-orange ">
             Go to {coins?.name}
           </a>
         </Link>

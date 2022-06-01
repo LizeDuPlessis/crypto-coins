@@ -1,14 +1,18 @@
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import Header from "./Header";
+import Card from "./Reviews/Card";
 const Layout = ({ children }) => {
   return (
-    <div className="bg-white-100">
-      <Header />
-      <Navbar />
-      {children}
-      <Footer />
-    </div>
+    <Card>
+      <div className="bg-white-100">
+        <Header />
+
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </Card>
   );
 };
 

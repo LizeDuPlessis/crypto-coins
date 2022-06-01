@@ -36,20 +36,23 @@ function FeedbackForm({ handleAdd }) {
   };
 
   return (
-    <div className="bg-white rounded mx-5 my-5 py-5 px-5 text-center">
+    <div className="bg-white rounded mx-5 my-5 py-5 px-5 text-center ">
       <form onSubmit={handleSubmit}>
         <h2>How would you rate the crypto currencies?</h2>
         <RatingSelect select={(rating) => setRating(rating)} />
-        <input
-          type="text"
-          placeholder="Write review here"
-          onChange={handleTextChange}
-          value={text}
-        />
+        <div className="input-group">
+          <textarea
+            type="text"
+            placeholder="Write review here"
+            onChange={handleTextChange}
+            value={text}
+          />
+        </div>
+
         <Button type="submit" isDisabled={btnDisabled}>
           Send
         </Button>
-        {message && <div>{message}</div>}
+        {message && <div className="message">{message}</div>}
       </form>
     </div>
   );
